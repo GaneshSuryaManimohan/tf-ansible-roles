@@ -1,5 +1,5 @@
 - name: "Configuring {{component}}"
-  hosts: localhost
+  hosts: all
   vars_files:
   - "../variables-{{env}}.yaml"
   connection: local
