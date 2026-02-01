@@ -1,7 +1,7 @@
 - name: "Configuring {{component}}"
   hosts: all
   vars_files:
-  - "../variables-{{env}}.yaml"
+  - "variables-{{env}}.yaml"
   connection: local
   become: yes
   roles:
