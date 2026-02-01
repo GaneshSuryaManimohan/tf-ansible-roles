@@ -1,4 +1,4 @@
-root_password: ExpenseApp@1
+root_password: ExpenseApp1
 login_host: db-dev.surya-devops.site
 login_user: root
 DB_HOST: db-dev.surya-devops.site
