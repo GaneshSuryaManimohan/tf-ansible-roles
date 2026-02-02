@@ -2,3 +2,4 @@ login_user: root
 login_host: db-prod.surya-devops.site
 login_password: ExpenseApp1
 DB_HOST: db-prod.surya-devops.site
+BACKEND_HOST_URL: backend.app-prod.surya-devops.site

@@ -1,3 +1,2 @@
-BACKEND_HOST_URL: backend.surya-devops.site
 component: frontend
 app_location: /usr/share/nginx/html
