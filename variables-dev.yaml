@@ -3,3 +3,4 @@ login_host: db-dev.surya-devops.site
 login_user: root
 DB_HOST: db-dev.surya-devops.site
 BACKEND_HOST_URL: backend.app-dev.surya-devops.site
+NEXUS_URL: nexus.surya-devops.site:8081

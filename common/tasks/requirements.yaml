@@ -8,8 +8,16 @@
     path: "{{ app_location }}"
     state: directory
 
+# We used this before nexus
+# - name: download and extract code
+#   ansible.builtin.unarchive:
+#      src: "https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{component}}-v2.zip"
+#      dest: "{{ app_location }}"
+#      remote_src: yes
+
+# Downloading the Artifactory from Nexus 
 - name: download and extract code
   ansible.builtin.unarchive:
-     src: "https://expense-builds.s3.us-east-1.amazonaws.com/expense-{{component}}-v2.zip"
+     src: "http://{{NEXUS_URL}}/repository/{{component}}/com/expense/{{component}}/{{APP_VERSION}}/{{component}}-{{APP_VERSION}}.zip"
      dest: "{{ app_location }}"
      remote_src: yes
